@@ -1,14 +1,581 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-CO">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Club Hunk Cartagena</title>
-<meta http-equiv="refresh" content="0; url=propuesta/">
-<link rel="icon" href="recursos/logo/club-hunk-logo-512.webp">
-<link rel="canonical" href="propuesta/">
+<title>Club Hunk Cartagena · Rodamos juntos</title>
+<meta name="description" content="Club Hunk Cartagena (CHC): la familia motera de Cartagena. Rodadas nocturnas, miradores y viajes los jueves y domingos. Seguridad, respeto y apoyo a emprendedores desde 2025. ¡Únete!">
+<meta name="theme-color" content="#030203">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" type="image/webp" href="recursos/logo/club-hunk-logo-512.webp">
+<link rel="apple-touch-icon" href="recursos/logo/club-hunk-logo-512.webp">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:site_name" content="Club Hunk Cartagena">
+<meta property="og:title" content="Club Hunk Cartagena · Rodamos juntos">
+<meta property="og:description" content="Rodadas jueves y domingos, seguridad y familia motera en Cartagena. Si quieres hacer parte de esta hermosa familia, escríbenos.">
+<meta property="og:image" content="recursos/logo/club-hunk-logo.webp">
+<meta property="og:image:width" content="1279">
+<meta property="og:image:height" content="1279">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/landing.css">
+<link rel="stylesheet" href="assets/css/feed.css">
 </head>
-<body style="background:#030203;color:#EBE7EE;font-family:system-ui,sans-serif;text-align:center;padding:40px 16px">
-<p>Redirigiendo a la <a href="propuesta/" style="color:#7B50DD">propuesta de Club Hunk Cartagena</a>…</p>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<!-- Sprite de iconos SVG inline -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="3"/><circle cx="18" cy="5" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+  <symbol id="i-mountain" viewBox="0 0 24 24"><path d="m3 20 6.5-11 4 6.5 2.5-4L21 20z"/><circle cx="17" cy="5" r="2"/></symbol>
+  <symbol id="i-road" viewBox="0 0 24 24"><path d="M4 21 9 3M20 21 15 3M12 5v2M12 11v2M12 17v3"/></symbol>
+  <symbol id="i-gauge" viewBox="0 0 24 24"><path d="M3.5 17a9 9 0 1 1 17 0"/><path d="m12 15 4.5-5"/><circle cx="12" cy="15" r="1.6"/><path d="M6 12.5h1M12 6.5v1M17 12.5h1"/></symbol>
+  <symbol id="i-qr" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM21 14v.01M14 21h.01M17 21h4v-4"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/><path d="M12 15v2"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></symbol>
+  <symbol id="i-edit" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></symbol>
+  <symbol id="i-helmet" viewBox="0 0 24 24"><path d="M3 15.5a9 9 0 0 1 18-2.5v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M21 12.5h-7.5a2 2 0 0 0-2 2V19"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 22V3"/><path d="M4 4h15l-2.5 5 2.5 5H4"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19.5 12.6 12 20l-7.5-7.4A5 5 0 1 1 12 6a5 5 0 1 1 7.5 6.6"/></symbol>
+  <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M19.5 12.6 12 20l-7.5-7.4A5 5 0 1 1 12 6a5 5 0 1 1 7.5 6.6"/><path d="M3.5 12H8l1.5-2.5 3 5 1.5-2.5h6"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"/><path d="M16 3.1a4 4 0 0 1 0 7.8M22 21v-2a4 4 0 0 0-3-3.9"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4a2 2 0 0 1 0-4h2M18 9h2a2 2 0 0 0 0-4h-2"/><path d="M6 3h12v6a6 6 0 0 1-12 0z"/><path d="M12 15v3M8 21h8M9 21l1-3h4l1 3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2z"/><path d="M19 3v4M17 5h4"/></symbol>
+  <symbol id="i-shirt" viewBox="0 0 24 24"><path d="M8 3 3 6l2 4 2-1v12h10V9l2 1 2-4-5-3a4 4 0 0 1-8 0z"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 24 24"><path d="M11 12.5V5a1.5 1.5 0 0 1 3 0v6M14 6a1.5 1.5 0 0 1 3 0v6M17 8a1.5 1.5 0 0 1 3 0v6a7 7 0 0 1-7 7h-1a7 7 0 0 1-5.6-2.8L3.3 15a1.6 1.6 0 0 1 2.5-2L8 15V7a1.5 1.5 0 0 1 3 0"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 4h7a3 3 0 0 1 3 3v14a2 2 0 0 0-2-2H2zM22 4h-7a3 3 0 0 0-3 3v14a2 2 0 0 1 2-2h8z"/></symbol>
+  <symbol id="i-juice" viewBox="0 0 24 24"><path d="M6 8h12l-1.5 13h-9z"/><path d="M12 8 15 2M6.5 13h11"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-6.4A8 8 0 1 1 21 12z"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="b-tt" viewBox="0 0 24 24"><path d="M12.53.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></symbol>
+  <symbol id="b-gh" viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.57.1.78-.25.78-.55v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.66.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></symbol>
+</svg>
+
+<!-- 1 · HEADER -->
+<header class="site-header" id="top-nav">
+  <div class="contenedor site-header__in">
+    <a class="marca" href="#inicio" aria-label="Club Hunk Cartagena, ir al inicio">
+      <img src="recursos/logo/club-hunk-logo-512.webp" alt="" width="44" height="44">
+      <span class="marca__txt"><b>Club Hunk</b><small>Cartagena</small></span>
+    </a>
+    <nav id="nav-menu" class="nav" aria-label="Principal">
+      <ul class="nav__lista">
+        <li><a href="#club">Club</a></li>
+        <li><a href="#rodadas">Rodadas</a></li>
+        <li><a href="#feed">Comunidad</a></li>
+        <li><a href="#aliados">Aliados</a></li>
+        <li><a href="#unete">Únete</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav__acciones">
+        <a class="btn btn-borde btn-sm" href="portal/"><svg class="ico" aria-hidden="true"><use href="#i-user"/></svg>Portal miembros</a>
+        <a class="btn btn-cta btn-sm" href="portal/registro.html">Únete</a>
+      </div>
+    </nav>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
+      <span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span>
+    </button>
+  </div>
+</header>
+
+<main id="contenido">
+
+<!-- 2 · HERO -->
+<section class="hero" id="inicio" aria-labelledby="hero-titulo">
+  <div class="hero__fondo" aria-hidden="true">
+    <img src="recursos/fotos/rodada-nocturna.webp" alt="" width="527" height="703" data-parallax="0.2" fetchpriority="high">
+  </div>
+  <div class="hero__overlay" aria-hidden="true"></div>
+  <div class="hero__cuadros" aria-hidden="true"></div>
+  <div class="contenedor hero__in">
+    <div class="hero__texto">
+      <p class="pill" data-reveal="down"><span class="punto-vivo" aria-hidden="true"></span>Cartagena · Colombia · Desde 2025</p>
+      <h1 id="hero-titulo" data-reveal="up" data-delay="100">
+        <span class="hero__l1">Rodamos juntos.</span>
+        <span class="hero__l2 cromo">Cartagena en dos ruedas,</span>
+        <span class="hero__l3">una sola familia.</span>
+      </h1>
+      <p class="hero__sub" data-reveal="up" data-delay="200">Somos el <strong>Club Hunk Cartagena</strong>: moteros que salen cada jueves y domingo a rodar seguros, con respeto y con el corazón puesto en el grupo. Si tienes moto y ganas de rodar, aquí tienes parche.</p>
+      <div class="hero__ctas" data-reveal="up" data-delay="300">
+        <a class="btn btn-cta btn-lg" href="portal/registro.html">Quiero ser parte <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-borde btn-lg btn-vidrio" href="#rodadas"><svg class="ico" aria-hidden="true"><use href="#i-route"/></svg>Ver rodadas</a>
+      </div>
+      <ul class="hero__datos" data-reveal="fade" data-delay="400">
+        <li><svg class="ico" aria-hidden="true"><use href="#i-cal"/></svg>Jueves y domingos</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>Seguridad primero</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-heart"/></svg>Familia CHC</li>
+      </ul>
+    </div>
+    <div class="hero__logo" data-reveal="zoom" data-delay="200">
+      <div class="hero__aro" aria-hidden="true"></div>
+      <img src="recursos/logo/club-hunk-logo-circular.webp" alt="Emblema del Club Hunk Cartagena: casco morado con alas rojas, cintas Racing y 2025" width="1279" height="1279">
+    </div>
+  </div>
+  <a class="hero__scroll" href="#lemas" aria-label="Bajar a la siguiente sección">
+    <span class="hero__raton" aria-hidden="true"><span></span></span>
+    <span class="hero__scroll-txt">Desliza</span>
+  </a>
+</section>
+
+<!-- 3 · MARQUEE -->
+<div class="marquee" id="lemas" aria-label="Lemas del club">
+  <div class="marquee__track">
+    <span>#cartacho</span><i aria-hidden="true"></i>
+    <span>#racing</span><i aria-hidden="true"></i>
+    <span>Rodadas jueves y domingos</span><i aria-hidden="true"></i>
+    <span>Desde 2025</span><i aria-hidden="true"></i>
+    <span>Sé parte de nuestro club</span><i aria-hidden="true"></i>
+    <span>Rodamos juntos</span><i aria-hidden="true"></i>
+    <span>Familia CHC</span><i aria-hidden="true"></i>
+    <span aria-hidden="true">#cartacho</span><i aria-hidden="true"></i>
+    <span aria-hidden="true">#racing</span><i aria-hidden="true"></i>
+    <span aria-hidden="true">Rodadas jueves y domingos</span><i aria-hidden="true"></i>
+    <span aria-hidden="true">Desde 2025</span><i aria-hidden="true"></i>
+    <span aria-hidden="true">Sé parte de nuestro club</span><i aria-hidden="true"></i>
+    <span aria-hidden="true">Rodamos juntos</span><i aria-hidden="true"></i>
+    <span aria-hidden="true">Familia CHC</span><i aria-hidden="true"></i>
+  </div>
+</div>
+
+<!-- 4 · CIFRAS -->
+<section class="cifras tema-claro" aria-labelledby="cifras-titulo">
+  <div class="contenedor">
+    <h2 id="cifras-titulo" class="sr-only">El club en cifras</h2>
+    <ul class="cifras__grid">
+      <li class="cifra" data-reveal="up">
+        <span class="cifra__ico" aria-hidden="true"><svg><use href="#b-tt"/></svg></span>
+        <b class="cifra__num"><span data-count="1187" data-suffix="+">1187+</span></b>
+        <span class="cifra__lbl">seguidores en TikTok</span>
+      </li>
+      <li class="cifra" data-reveal="up" data-delay="100">
+        <span class="cifra__ico" aria-hidden="true"><svg><use href="#i-heart"/></svg></span>
+        <b class="cifra__num"><span data-count="3060" data-suffix="+">3060+</span></b>
+        <span class="cifra__lbl">me gusta en nuestros videos</span>
+      </li>
+      <li class="cifra" data-reveal="up" data-delay="200">
+        <span class="cifra__ico" aria-hidden="true"><svg><use href="#i-route"/></svg></span>
+        <b class="cifra__num"><span data-count="2">2</span></b>
+        <span class="cifra__lbl">rodadas oficiales por semana</span>
+      </li>
+      <li class="cifra" data-reveal="up" data-delay="300">
+        <span class="cifra__ico" aria-hidden="true"><svg><use href="#i-flag"/></svg></span>
+        <b class="cifra__num"><span data-count="2025" data-sin-miles>2025</span></b>
+        <span class="cifra__lbl">año de fundación</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- 5 · EL CLUB -->
+<section class="seccion club" id="club" aria-labelledby="club-titulo">
+  <div class="contenedor club__grid">
+    <div class="club__media" data-reveal="left">
+      <figure class="club__foto club__foto--a">
+        <img src="recursos/fotos/integrantes.webp" alt="Integrantes del Club Hunk Cartagena posando juntos con sus motos" width="525" height="703" loading="lazy">
+      </figure>
+      <figure class="club__foto club__foto--b">
+        <img src="recursos/fotos/miembro-casco.webp" alt="Miembro del club con su casco puesto, listo para rodar" width="525" height="703" loading="lazy">
+      </figure>
+      <div class="club__sello" aria-hidden="true"><b>CHC</b><small>Est. 2025</small></div>
+    </div>
+    <div class="club__texto">
+      <p class="eyebrow" data-reveal="fade">Quiénes somos</p>
+      <h2 id="club-titulo" data-reveal="up">Más que un club de motos: <span class="grad-txt">una hermosa familia</span></h2>
+      <p class="lead" data-reveal="up" data-delay="100">Nacimos en 2025 de algo simple: las ganas de rodar en grupo por Cartagena. Hoy somos un parche de pilotos Hunk (y amigos de otras motos) que comparte rodadas nocturnas, miradores, viajes, jerseys oficiales y, sobre todo, el compromiso de cuidarnos en la vía.</p>
+      <ul class="valores">
+        <li class="valor" data-reveal="up" data-delay="100">
+          <span class="valor__ico" aria-hidden="true"><svg><use href="#i-users"/></svg></span>
+          <div><h3>Familia</h3><p>Aquí nadie rueda solo. Nos conocemos, nos esperamos y celebramos juntos.</p></div>
+        </li>
+        <li class="valor" data-reveal="up" data-delay="200">
+          <span class="valor__ico valor__ico--rojo" aria-hidden="true"><svg><use href="#i-shield"/></svg></span>
+          <div><h3>Seguridad</h3><p>Casco, equipo y formación. Rodamos con orden, señas y líderes de rodada.</p></div>
+        </li>
+        <li class="valor" data-reveal="up" data-delay="300">
+          <span class="valor__ico" aria-hidden="true"><svg><use href="#i-hand"/></svg></span>
+          <div><h3>Respeto</h3><p>Por la vía, por los peatones, por los demás moteros y por la ciudad.</p></div>
+        </li>
+        <li class="valor" data-reveal="up" data-delay="400">
+          <span class="valor__ico valor__ico--rojo" aria-hidden="true"><svg><use href="#i-cart"/></svg></span>
+          <div><h3>Apoyo a emprendedores</h3><p>Impulsamos los negocios de nuestros miembros y aliados locales.</p></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · RODADAS -->
+<section class="seccion rodadas tema-claro" id="rodadas" aria-labelledby="rodadas-titulo">
+  <div class="franja-cuadros" aria-hidden="true"></div>
+  <div class="contenedor">
+    <header class="sec-head">
+      <p class="eyebrow" data-reveal="fade">Rodadas</p>
+      <h2 id="rodadas-titulo" data-reveal="up">Jueves y domingos, <span class="grad-txt">motor encendido</span></h2>
+      <p class="lead" data-reveal="up" data-delay="100">Nuestras reuniones oficiales son los <strong>jueves</strong> y los <strong>domingos</strong>. Punto de encuentro, hora y ruta se confirman en la Comunidad CHC de WhatsApp.</p>
+    </header>
+
+    <div class="dias">
+      <article class="dia" data-reveal="left">
+        <span class="dia__tag">Entre semana</span>
+        <h3>Jueves</h3>
+        <p>Rodada nocturna urbana: luces de la ciudad, recorrido corto y parche al final.</p>
+        <span class="dia__meta"><svg class="ico" aria-hidden="true"><use href="#i-moon"/></svg>Noche · Cartagena</span>
+      </article>
+      <article class="dia dia--rojo" data-reveal="right">
+        <span class="dia__tag">Fin de semana</span>
+        <h3>Domingo</h3>
+        <p>Rodada de domingo: miradores, salidas más largas y foto grupal con la bandera del club.</p>
+        <span class="dia__meta"><svg class="ico" aria-hidden="true"><use href="#i-mountain"/></svg>Día · Rutas y miradores</span>
+      </article>
+    </div>
+
+    <h3 class="sub-titulo" data-reveal="up">Tipos de rodada</h3>
+    <ul class="tipos">
+      <li class="tipo" data-reveal="up">
+        <span class="tipo__ico" aria-hidden="true"><svg><use href="#i-moon"/></svg></span>
+        <h4>Nocturnas urbanas</h4>
+        <p>La ciudad de noche, en caravana y con orden. El parqueadero lleno de Hunks es la mejor postal.</p>
+      </li>
+      <li class="tipo" data-reveal="up" data-delay="100">
+        <span class="tipo__ico" aria-hidden="true"><svg><use href="#i-mountain"/></svg></span>
+        <h4>Miradores</h4>
+        <p>Subimos a los mejores puntos de vista de Cartagena y alrededores para disfrutar el paisaje en grupo.</p>
+      </li>
+      <li class="tipo" data-reveal="up" data-delay="200">
+        <span class="tipo__ico" aria-hidden="true"><svg><use href="#i-road"/></svg></span>
+        <h4>Viajes</h4>
+        <p>Salidas por carretera planeadas con tiempo: ruta, paradas, revisión de motos y líder asignado.</p>
+      </li>
+    </ul>
+
+    <div class="proximas">
+      <div class="proximas__head" data-reveal="up">
+        <h3 class="sub-titulo">Próximas rodadas</h3>
+        <span class="chip-aviso"><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg>Ejemplo · fechas por confirmar</span>
+      </div>
+      <ul class="eventos">
+        <li class="evento" data-reveal="up">
+          <div class="evento__fecha"><b>JUE</b><small>Semanal</small></div>
+          <div class="evento__info">
+            <span class="evento__estado">Por confirmar</span>
+            <h4>Rodada nocturna urbana</h4>
+            <p><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>Punto de encuentro: se anuncia en la Comunidad CHC</p>
+          </div>
+        </li>
+        <li class="evento" data-reveal="up" data-delay="100">
+          <div class="evento__fecha"><b>DOM</b><small>Semanal</small></div>
+          <div class="evento__info">
+            <span class="evento__estado">Por confirmar</span>
+            <h4>Rodada a miradores</h4>
+            <p><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>Ruta y hora: se anuncian en la Comunidad CHC</p>
+          </div>
+        </li>
+        <li class="evento" data-reveal="up" data-delay="200">
+          <div class="evento__fecha evento__fecha--rojo"><b>ESP</b><small>Especial</small></div>
+          <div class="evento__info">
+            <span class="evento__estado">Ejemplo</span>
+            <h4>Entrega de jerseys oficiales</h4>
+            <p><svg class="ico" aria-hidden="true"><use href="#i-shirt"/></svg>Ya van 3 entregas. La próxima se anuncia en redes</p>
+          </div>
+        </li>
+      </ul>
+      <p class="nota">Las fechas reales, puntos de encuentro y cambios por clima se publican en la Comunidad CHC de WhatsApp. Los miembros las verán también en el portal.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · ÚNETE -->
+<section class="seccion unete" id="unete" aria-labelledby="unete-titulo">
+  <div class="unete__brillo" aria-hidden="true"></div>
+  <div class="contenedor">
+    <header class="sec-head">
+      <p class="eyebrow" data-reveal="fade">¿Quieres hacer parte?</p>
+      <h2 id="unete-titulo" data-reveal="up">¿Por qué unirte al <span class="cromo">CHC</span>?</h2>
+      <p class="lead" data-reveal="up" data-delay="100">Si quieres hacer parte de esta hermosa familia, este es tu camino. Sin vueltas, sin letra pequeña.</p>
+    </header>
+
+    <ul class="beneficios">
+      <li data-reveal="up"><span class="beneficio__ico" aria-hidden="true"><svg><use href="#i-route"/></svg></span><h3>Rodadas con parche</h3><p>Dos salidas oficiales por semana y viajes planeados en grupo.</p></li>
+      <li data-reveal="up" data-delay="100"><span class="beneficio__ico" aria-hidden="true"><svg><use href="#i-shield"/></svg></span><h3>Rodar más seguro</h3><p>Líderes de rodada, señas y formación de la Academia CHC.</p></li>
+      <li data-reveal="up" data-delay="200"><span class="beneficio__ico" aria-hidden="true"><svg><use href="#i-shirt"/></svg></span><h3>Jersey oficial</h3><p>Lleva los colores del club cuando pases a miembro oficial.</p></li>
+      <li data-reveal="up" data-delay="300"><span class="beneficio__ico" aria-hidden="true"><svg><use href="#i-cart"/></svg></span><h3>Red de apoyo</h3><p>Contactos, emprendimientos aliados y una familia que responde.</p></li>
+    </ul>
+
+    <div class="ruta">
+      <h3 class="ruta__titulo" data-reveal="up">La ruta del aspirante</h3>
+      <ol class="ruta__pasos">
+        <li class="paso" data-reveal="up">
+          <span class="paso__num">01</span>
+          <span class="paso__ico" aria-hidden="true"><svg><use href="#i-edit"/></svg></span>
+          <h4>Escríbenos</h4>
+          <p>Llena la solicitud en la web o escríbenos por DM en TikTok o Instagram.</p>
+        </li>
+        <li class="paso" data-reveal="up" data-delay="120">
+          <span class="paso__num">02</span>
+          <span class="paso__ico" aria-hidden="true"><svg><use href="#i-helmet"/></svg></span>
+          <h4>Rueda con nosotros</h4>
+          <p>Te sumas a las rodadas como aspirante y conoces al grupo en la vía.</p>
+        </li>
+        <li class="paso" data-reveal="up" data-delay="240">
+          <span class="paso__num">03</span>
+          <span class="paso__ico" aria-hidden="true"><svg><use href="#i-users"/></svg></span>
+          <h4>Revisión de líderes</h4>
+          <p>Los líderes valoran tu compromiso, actitud y asistencia.</p>
+        </li>
+        <li class="paso paso--meta" data-reveal="up" data-delay="360">
+          <span class="paso__num">04</span>
+          <span class="paso__ico" aria-hidden="true"><svg><use href="#i-shirt"/></svg></span>
+          <h4>Recibe tu jersey</h4>
+          <p>Bienvenido a la familia: eres miembro oficial del Club Hunk Cartagena.</p>
+        </li>
+      </ol>
+      <div class="ruta__cta" data-reveal="zoom">
+        <a class="btn btn-cta btn-lg" href="portal/registro.html">Llenar mi solicitud <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <span class="ruta__nota">Toma menos de 5 minutos · Sin costo</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8 · YA ERES DEL CLUB -->
+<section class="seccion miembros tema-claro" id="miembros" aria-labelledby="miembros-titulo">
+  <div class="contenedor miembros__grid">
+    <div class="miembros__texto">
+      <p class="eyebrow" data-reveal="fade">Ya eres del club</p>
+      <h2 id="miembros-titulo" data-reveal="up">Tu portal de miembro, <span class="grad-txt">todo en un solo lugar</span></h2>
+      <p class="lead" data-reveal="up" data-delay="100">Entra con tu cuenta y mantén tu información al día. Tus datos sensibles solo los ven los líderes autorizados.</p>
+      <ul class="portal-lista">
+        <li data-reveal="left" data-delay="100"><span aria-hidden="true"><svg><use href="#i-user"/></svg></span><div><h3>Tu ficha</h3><p>Datos personales, moto, SOAT y tecnomecánica con recordatorios.</p></div></li>
+        <li data-reveal="left" data-delay="200"><span class="rojo" aria-hidden="true"><svg><use href="#i-qr"/></svg></span><div><h3>Ficha de emergencia con QR</h3><p>Un sticker para el casco con lo esencial: tipo de sangre, alergias y a quién llamar.</p></div></li>
+        <li data-reveal="left" data-delay="300"><span aria-hidden="true"><svg><use href="#i-route"/></svg></span><div><h3>Historial de rodadas</h3><p>Cada rodada y viaje en el que participas queda registrado.</p></div></li>
+        <li data-reveal="left" data-delay="400"><span aria-hidden="true"><svg><use href="#i-trophy"/></svg></span><div><h3>Insignias Academia CHC</h3><p>Gana insignias por cada capacitación de seguridad que completes.</p></div></li>
+      </ul>
+      <a class="btn btn-primario btn-lg" href="portal/" data-reveal="up"><svg class="ico" aria-hidden="true"><use href="#i-lock"/></svg>Entrar al portal</a>
+    </div>
+    <div class="miembros__mock" data-reveal="right" aria-hidden="true">
+      <div class="carnet">
+        <div class="carnet__top">
+          <img src="recursos/logo/club-hunk-logo-512.webp" alt="" width="48" height="48" loading="lazy">
+          <div><b>Club Hunk Cartagena</b><small>Carnet de miembro</small></div>
+          <span class="carnet__estado">Oficial</span>
+        </div>
+        <div class="carnet__cuerpo">
+          <div class="carnet__avatar"><svg><use href="#i-helmet"/></svg></div>
+          <div class="carnet__datos">
+            <span>Apodo</span><b>Tu nombre aquí</b>
+            <span>Moto</span><b>Hero Hunk</b>
+            <span>Miembro desde</span><b>2025</b>
+          </div>
+          <div class="carnet__qr"><svg viewBox="0 0 21 21" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h7v7H0zM1 1v5h5V1zM2 2h3v3H2zM14 0h7v7h-7zM15 1v5h5V1zM16 2h3v3h-3zM0 14h7v7H0zM1 15v5h5v-5zM2 16h3v3H2zM8 0h2v2H8zM11 1h2v3h-2zM8 3h2v2H8zM9 6h3v2H9zM8 9h2v3H8zM11 9h3v2h-3zM14 8h2v2h-2zM17 8h4v2h-4zM0 8h3v2H0zM4 9h3v2H4zM12 12h2v2h-2zM15 11h2v3h-2zM18 12h3v2h-3zM8 14h3v2H8zM12 15h3v2h-3zM16 15h2v3h-2zM19 15h2v2h-2zM8 17h2v4H8zM11 18h4v2h-4zM18 19h3v2h-3zM1 11h2v2H1zM5 12h2v2H5z"/></svg></div>
+        </div>
+        <div class="carnet__insignias">
+          <span><svg><use href="#i-shield"/></svg>Seguridad vial</span>
+          <span><svg><use href="#i-flag"/></svg>Señas de grupo</span>
+          <span><svg><use href="#i-pulse"/></svg>Primeros auxilios</span>
+        </div>
+        <div class="carnet__cuadros"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9 · GALERÍA -->
+<section class="seccion galeria" id="galeria" aria-labelledby="galeria-titulo">
+  <div class="contenedor">
+    <header class="sec-head">
+      <p class="eyebrow" data-reveal="fade">Galería</p>
+      <h2 id="galeria-titulo" data-reveal="up">Así se vive el <span class="cromo">CHC</span></h2>
+    </header>
+    <div class="mosaico">
+      <figure class="mosaico__item mosaico__item--alto" data-reveal="zoom">
+        <img src="recursos/fotos/rodada-nocturna.webp" alt="Rodada nocturna del club por las calles de Cartagena con las luces encendidas" width="527" height="703" loading="lazy">
+        <figcaption>Rodadas nocturnas</figcaption>
+      </figure>
+      <figure class="mosaico__item" data-reveal="zoom" data-delay="100">
+        <img src="recursos/fotos/rodada-grupo.webp" alt="Grupo de motos Hunk del club detenido durante una rodada" width="524" height="703" loading="lazy">
+        <figcaption>En grupo, siempre</figcaption>
+      </figure>
+      <figure class="mosaico__item mosaico__item--logo" data-reveal="zoom" data-delay="200">
+        <img src="recursos/logo/club-hunk-logo-circular.webp" alt="Logo circular del Club Hunk Cartagena" width="1279" height="1279" loading="lazy">
+        <figcaption>Est. 2025</figcaption>
+      </figure>
+      <figure class="mosaico__item" data-reveal="zoom" data-delay="300">
+        <img src="recursos/fotos/integrantes.webp" alt="Integrantes del club reunidos tras una rodada" width="525" height="703" loading="lazy">
+        <figcaption>La familia</figcaption>
+      </figure>
+      <figure class="mosaico__item mosaico__item--ancho" data-reveal="zoom" data-delay="400">
+        <img src="recursos/fotos/miembro-casco.webp" alt="Miembro del club con casco, preparado para salir a rodar" width="525" height="703" loading="lazy">
+        <figcaption>Casco siempre</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · FEED -->
+<section id="feed" class="seccion feed tema-claro" aria-labelledby="feed-titulo">
+  <div class="contenedor">
+    <header class="sec-head">
+      <p class="eyebrow" data-reveal="fade">Comunidad</p>
+      <h2 id="feed-titulo" data-reveal="up">Lo último en <span class="grad-txt">nuestras redes</span></h2>
+      <p class="lead" data-reveal="up" data-delay="100">Rodadas, entregas de jerseys, miradores y más. Videos con más de 12.6K vistas en TikTok. Síguenos y no te pierdas la próxima.</p>
+    </header>
+    <div id="feed-root"></div>
+  </div>
+</section>
+
+<!-- 11 · ALIADOS -->
+<section class="seccion aliados" id="aliados" aria-labelledby="aliados-titulo">
+  <div class="contenedor">
+    <header class="sec-head">
+      <p class="eyebrow" data-reveal="fade">Aliados y emprendimientos</p>
+      <h2 id="aliados-titulo" data-reveal="up">Rodamos y <span class="cromo">nos apoyamos</span></h2>
+      <p class="lead" data-reveal="up" data-delay="100">Creemos en el talento local. Estos son los emprendimientos que caminan (y ruedan) con nosotros.</p>
+    </header>
+    <div class="aliados__grid">
+      <article class="aliado" data-reveal="left">
+        <div class="aliado__logo aliado__logo--fresh" aria-hidden="true"><svg><use href="#i-juice"/></svg></div>
+        <div class="aliado__info">
+          <span class="aliado__cat">Jugos y frutas</span>
+          <h3>Natural Fresh Ctg</h3>
+          <p>Jugos naturales y frutas frescas para recargar energía después de cada rodada. Como decimos en el club: <em>“Todos pa' Natural Fresh Ctg”</em>.</p>
+          <span class="aliado__tag"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Aliado oficial</span>
+        </div>
+      </article>
+      <article class="aliado aliado--vacio" data-reveal="right">
+        <div class="aliado__logo" aria-hidden="true"><svg><use href="#i-plus"/></svg></div>
+        <div class="aliado__info">
+          <span class="aliado__cat">Vitrina para miembros</span>
+          <h3>Tu emprendimiento aquí</h3>
+          <p>¿Eres del club y tienes un negocio? Lo mostramos en nuestra vitrina con foto, descripción y contacto directo, previa aprobación de los líderes.</p>
+          <a class="enlace-flecha" href="portal/">Postula tu emprendimiento <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 12 · ACADEMIA -->
+<section class="seccion academia tema-claro" id="academia" aria-labelledby="academia-titulo">
+  <div class="contenedor academia__grid">
+    <div class="academia__texto">
+      <p class="eyebrow" data-reveal="fade">Academia CHC</p>
+      <h2 id="academia-titulo" data-reveal="up">Rodar seguros <span class="grad-txt">también se aprende</span></h2>
+      <p class="lead" data-reveal="up" data-delay="100">La seguridad no es un discurso: es parte de cada rodada. En la Academia CHC compartimos lo que sabemos para volver todos a casa.</p>
+      <a class="btn btn-primario" href="portal/" data-reveal="up" data-delay="200"><svg class="ico" aria-hidden="true"><use href="#i-book"/></svg>Ver capacitaciones</a>
+    </div>
+    <ul class="modulos">
+      <li data-reveal="up"><span class="modulo__n">01</span><svg class="ico" aria-hidden="true"><use href="#i-flag"/></svg><h3>Señas de grupo</h3><p>Cómo comunicarnos en caravana sin hablar.</p></li>
+      <li data-reveal="up" data-delay="100"><span class="modulo__n">02</span><svg class="ico" aria-hidden="true"><use href="#i-helmet"/></svg><h3>Equipo de protección</h3><p>Casco certificado, guantes, chaqueta y botas.</p></li>
+      <li data-reveal="up" data-delay="200"><span class="modulo__n">03</span><svg class="ico" aria-hidden="true"><use href="#i-pulse"/></svg><h3>Primeros auxilios</h3><p>Qué hacer (y qué no) ante una caída.</p></li>
+      <li data-reveal="up" data-delay="300"><span class="modulo__n">04</span><svg class="ico" aria-hidden="true"><use href="#i-gauge"/></svg><h3>Mecánica básica</h3><p>Revisión pre-rodada: llantas, frenos, luces y cadena.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 13 · FAQ -->
+<section class="seccion faq" id="faq" aria-labelledby="faq-titulo">
+  <div class="contenedor faq__in">
+    <header class="sec-head">
+      <p class="eyebrow" data-reveal="fade">Preguntas frecuentes</p>
+      <h2 id="faq-titulo" data-reveal="up">Resolvemos tus dudas</h2>
+    </header>
+    <div class="faq__lista">
+      <details data-reveal="up">
+        <summary>¿Qué requisitos hay para entrar al club?</summary>
+        <div class="faq__resp"><p>Ser mayor de edad, tener tu moto con papeles al día (licencia, SOAT y tecnomecánica), usar casco y equipo de protección, y sobre todo buena actitud. Primero ruedas como aspirante y luego los líderes revisan tu proceso.</p></div>
+      </details>
+      <details data-reveal="up" data-delay="50">
+        <summary>¿Necesito tener una Hero Hunk?</summary>
+        <div class="faq__resp"><p>El club nació alrededor de la Hunk y es nuestra moto insignia, pero lo que más nos importa es el compromiso con el grupo. Escríbenos y te contamos cómo puedes rodar con nosotros.</p></div>
+      </details>
+      <details data-reveal="up" data-delay="100">
+        <summary>¿Cuánto cuesta ser parte del club?</summary>
+        <div class="faq__resp"><p>Postularte y rodar como aspirante no tiene costo. Algunos elementos, como el jersey oficial o los viajes, se cubren entre todos y siempre se informan con anticipación.</p></div>
+      </details>
+      <details data-reveal="up" data-delay="150">
+        <summary>¿Cuándo y dónde ruedan?</summary>
+        <div class="faq__resp"><p>Las rodadas oficiales son los jueves y los domingos. El punto de encuentro, la hora y la ruta se publican en la Comunidad CHC de WhatsApp y en nuestras redes.</p></div>
+      </details>
+      <details data-reveal="up" data-delay="200">
+        <summary>¿Qué pasa con mis datos personales?</summary>
+        <div class="faq__resp"><p>Tratamos tus datos según la <strong>Ley 1581 de 2012</strong> (Habeas Data). Los datos de salud son sensibles y opcionales, solo los ven los líderes autorizados y se usan únicamente en caso de emergencia. Puedes pedir que se actualicen o se borren cuando quieras.</p></div>
+      </details>
+      <details data-reveal="up" data-delay="250">
+        <summary>¿Cómo los contacto?</summary>
+        <div class="faq__resp"><p>Llena la solicitud en esta web o escríbenos por DM en <a href="https://www.tiktok.com/@clubhunkcartagena" target="_blank" rel="noopener">TikTok</a> o <a href="https://www.instagram.com/clubhunkcartagena" target="_blank" rel="noopener">Instagram</a>. ¡Te respondemos!</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 14 · CTA FINAL -->
+<section class="cta-final" aria-labelledby="cta-titulo">
+  <div class="cta-final__cuadros" aria-hidden="true"></div>
+  <div class="contenedor cta-final__in" data-reveal="zoom">
+    <img class="cta-final__logo" src="recursos/logo/club-hunk-logo-512.webp" alt="" width="120" height="120" loading="lazy">
+    <h2 id="cta-titulo">¿Listo para rodar con la familia?</h2>
+    <p>El próximo jueves puede ser tu primera rodada con el Club Hunk Cartagena. Escríbenos, llena tu solicitud y nos vemos en la vía.</p>
+    <div class="cta-final__btns">
+      <a class="btn btn-blanco btn-lg" href="portal/registro.html">Quiero ser parte <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn-borde btn-lg btn-borde-blanco" href="https://www.instagram.com/clubhunkcartagena" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>Escríbenos al DM</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- 15 · FOOTER -->
+<footer class="site-footer">
+  <div class="franja-cuadros franja-cuadros--fina" aria-hidden="true"></div>
+  <div class="contenedor footer__grid">
+    <div class="footer__marca">
+      <a class="marca" href="#inicio"><img src="recursos/logo/club-hunk-logo-512.webp" alt="" width="52" height="52" loading="lazy"><span class="marca__txt"><b>Club Hunk</b><small>Cartagena</small></span></a>
+      <p>Rodamos juntos desde 2025. #cartacho #racing #motos · Cartagena, Colombia.</p>
+      <div class="redes">
+        <a href="https://www.tiktok.com/@clubhunkcartagena" target="_blank" rel="noopener" aria-label="TikTok del Club Hunk Cartagena"><svg aria-hidden="true"><use href="#b-tt"/></svg></a>
+        <a href="https://www.instagram.com/clubhunkcartagena" target="_blank" rel="noopener" aria-label="Instagram del Club Hunk Cartagena"><svg aria-hidden="true"><use href="#i-ig"/></svg></a>
+      </div>
+    </div>
+    <nav class="footer__col" aria-label="El club">
+      <h3>El club</h3>
+      <ul><li><a href="#club">Quiénes somos</a></li><li><a href="#rodadas">Rodadas</a></li><li><a href="#galeria">Galería</a></li><li><a href="#aliados">Aliados</a></li></ul>
+    </nav>
+    <nav class="footer__col" aria-label="Miembros">
+      <h3>Miembros</h3>
+      <ul><li><a href="portal/registro.html">Quiero ser parte</a></li><li><a href="portal/">Portal miembros</a></li><li><a href="#academia">Academia CHC</a></li><li><a href="#faq">Preguntas frecuentes</a></li></ul>
+    </nav>
+    <div class="footer__col">
+      <h3>Contacto</h3>
+      <ul>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>Cartagena, Colombia</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-cal"/></svg>Rodadas jueves y domingos</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>Escríbenos al DM</li>
+      </ul>
+    </div>
+  </div>
+  <div class="contenedor footer__legal">
+    <p class="footer__datos"><svg class="ico" aria-hidden="true"><use href="#i-lock"/></svg>Tratamos tus datos personales conforme a la Ley 1581 de 2012 y sus decretos reglamentarios. Puedes conocer, actualizar, rectificar o suprimir tu información escribiéndonos por nuestras redes.</p>
+    <div class="footer__bottom">
+      <span>© 2026 Club Hunk Cartagena. Todos los derechos reservados.</span>
+      <span>Desarrollado por <a href="https://github.com/carforck" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#b-gh"/></svg>Carlos Carranza</a> · miembro CHC</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/landing.js" defer></script>
+<script src="assets/js/feed.js" defer></script>
 </body>
 </html>

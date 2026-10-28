@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mi panel · Club Hunk Cartagena</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#030203">
+<link rel="icon" type="image/webp" href="../recursos/logo/club-hunk-logo-512.webp">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/portal.css">
+</head>
+<body class="portal pag-panel tema-claro">
+<a class="salto" href="#contenido">Saltar al contenido</a>
+<div class="app">
+  <aside class="sidebar oscuro">
+    <div class="sb-marca"><a class="marca" href="../"><img src="../recursos/logo/club-hunk-logo-circular.webp" alt="" width="46" height="46"><span><b>Club Hunk</b><small>Portal de miembros</small></span></a></div>
+    <div class="franja sb-franja" aria-hidden="true"></div>
+    <nav class="nav-app" aria-label="Secciones del panel"><ul id="nav-lista"></ul></nav>
+    <div class="sb-pie" id="sb-pie"></div>
+  </aside>
+
+  <div class="app-main">
+    <header class="app-top">
+      <a class="marca" href="../"><img src="../recursos/logo/club-hunk-logo-circular.webp" alt="" width="34" height="34"><span><b>Club Hunk</b><small>Portal</small></span></a>
+      <h1 class="app-top-titulo" id="titulo-vista">Inicio</h1>
+      <div class="app-top-acciones">
+        <a class="btn-icono" href="../" aria-label="Volver al sitio" title="Volver al sitio"><svg class="i" aria-hidden="true"><use href="#i-home"/></svg></a>
+        <button type="button" class="btn-icono" data-salir data-salir-top aria-label="Cerrar sesión" title="Cerrar sesión"><svg class="i" aria-hidden="true"><use href="#i-logout"/></svg></button>
+      </div>
+    </header>
+
+    <main class="app-contenido" id="contenido" tabindex="-1">
+      <section class="vista activa" data-vista="inicio" aria-label="Inicio">
+        <div class="esqueleto esq-bloque" style="height:180px;margin-bottom:20px"></div>
+        <div class="stats"><div class="esqueleto" style="height:110px"></div><div class="esqueleto" style="height:110px"></div><div class="esqueleto" style="height:110px"></div><div class="esqueleto" style="height:110px"></div></div>
+        <div class="grid-panel"><div class="esqueleto esq-bloque" style="height:220px"></div><div class="esqueleto esq-bloque" style="height:220px"></div></div>
+      </section>
+      <section class="vista" data-vista="ficha" aria-label="Mi ficha"></section>
+      <section class="vista" data-vista="qr" aria-label="Ficha de emergencia"></section>
+      <section class="vista" data-vista="rodadas" aria-label="Mis rodadas"></section>
+      <section class="vista" data-vista="lideres" aria-label="Panel de líderes"></section>
+    </main>
+  </div>
+</div>
+<script type="module" src="../assets/js/portal/ui-panel.js"></script>
+</body>
+</html>

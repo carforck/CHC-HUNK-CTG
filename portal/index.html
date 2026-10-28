@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ingresar · Portal Club Hunk Cartagena</title>
+<meta name="description" content="Portal de miembros de Club Hunk Cartagena: ingresa a tu ficha o envía tu solicitud para unirte al club.">
+<meta name="theme-color" content="#030203">
+<link rel="icon" type="image/webp" href="../recursos/logo/club-hunk-logo-512.webp">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/portal.css">
+</head>
+<body class="portal pag-ingreso">
+<a class="salto" href="#contenido">Saltar al contenido</a>
+<div class="ingreso">
+  <aside class="ingreso-hero">
+    <div class="hero-top">
+      <a class="marca" href="../"><img src="../recursos/logo/club-hunk-logo-circular.webp" alt="" width="40" height="40"><span><b>Club Hunk</b><small>Cartagena</small></span></a>
+      <a class="volver" href="../"><svg class="i" aria-hidden="true"><use href="#i-left"/></svg>Volver al sitio</a>
+    </div>
+    <img class="hero-logo" src="../recursos/logo/club-hunk-logo-circular.webp" alt="Emblema de Club Hunk Cartagena" width="150" height="150">
+    <div class="hero-texto">
+      <span class="eyebrow">Portal de miembros</span>
+      <h1>Rodamos juntos, <span>nos cuidamos juntos</span></h1>
+      <p>Tu ficha, tu historial de rodadas y tu ficha de emergencia con QR, en un solo lugar.</p>
+    </div>
+    <ul class="hero-puntos">
+      <li><svg class="i" aria-hidden="true"><use href="#i-id"/></svg><span><b>Tu ficha siempre al día</b>Datos, moto y documentos con alertas antes de que se venzan.</span></li>
+      <li><svg class="i" aria-hidden="true"><use href="#i-qr"/></svg><span><b>QR de emergencia para el casco</b>Solo lo esencial para que te atiendan rápido en la vía.</span></li>
+      <li><svg class="i" aria-hidden="true"><use href="#i-route"/></svg><span><b>Rodadas y kilómetros</b>Tu historial con el club y tus insignias de la Academia CHC.</span></li>
+    </ul>
+    <div class="franja" aria-hidden="true"></div>
+  </aside>
+
+  <main id="contenido" class="ingreso-main tema-claro">
+    <div class="ingreso-caja">
+      <span class="eyebrow">Bienvenido</span>
+      <h2>Entra al portal</h2>
+      <p class="sub">¿Quieres unirte o ya haces parte del club?</p>
+
+      <div class="accesos">
+        <a class="acceso cta" href="registro.html">
+          <svg class="i" aria-hidden="true"><use href="#i-userplus"/></svg>
+          <span><b>Soy aspirante: quiero unirme</b><small>Llena tu solicitud en 5 pasos. Los líderes la revisan.</small></span>
+          <svg class="i" aria-hidden="true"><use href="#i-right"/></svg>
+        </a>
+        <button type="button" class="acceso" id="btn-soy-miembro" aria-controls="form-ingreso" aria-pressed="false">
+          <svg class="i" aria-hidden="true"><use href="#i-helmet"/></svg>
+          <span><b>Ya soy miembro</b><small>Ingresa con tu correo y contraseña.</small></span>
+          <svg class="i" aria-hidden="true"><use href="#i-right"/></svg>
+        </button>
+      </div>
+
+      <div class="divisor">Ingresa con tu cuenta</div>
+
+      <form id="form-ingreso" class="form-ingreso" novalidate>
+        <div class="alerta-form" id="ingreso-error" role="alert" hidden></div>
+        <div class="campo" data-campo="correo">
+          <label for="f-correo">Correo electrónico</label>
+          <input type="email" id="f-correo" name="correo" autocomplete="email" inputmode="email" placeholder="tucorreo@ejemplo.com" aria-describedby="f-correo-err" aria-required="true">
+          <p class="campo-error" id="f-correo-err" aria-live="polite"></p>
+        </div>
+        <div class="campo" data-campo="password">
+          <label for="f-password">Contraseña</label>
+          <div class="con-boton">
+            <input type="password" id="f-password" name="password" autocomplete="current-password" aria-describedby="f-password-err" aria-required="true">
+            <button type="button" class="btn-icono" data-ver-pass="f-password" aria-label="Mostrar contraseña" aria-pressed="false"><svg class="i" aria-hidden="true"><use href="#i-eye"/></svg></button>
+          </div>
+          <p class="campo-error" id="f-password-err" aria-live="polite"></p>
+        </div>
+        <div class="fila-sec">
+          <button type="button" class="btn-texto" id="btn-olvide">¿Olvidaste tu contraseña?</button>
+        </div>
+        <button type="submit" class="btn btn-primario btn-bloque" id="btn-ingresar"><svg class="i" aria-hidden="true"><use href="#i-login"/></svg>Ingresar</button>
+      </form>
+
+      <form id="form-recuperar" class="form-ingreso panel-recuperar" novalidate hidden>
+        <p style="margin:0;color:var(--muted)">Escribe el correo con el que te registraste y te enviaremos un enlace para crear una nueva contraseña.</p>
+        <div class="campo" data-campo="correoRec">
+          <label for="f-correo-rec">Correo electrónico</label>
+          <input type="email" id="f-correo-rec" name="correoRec" autocomplete="email" inputmode="email" aria-describedby="f-correo-rec-err" aria-required="true">
+          <p class="campo-error" id="f-correo-rec-err" aria-live="polite"></p>
+        </div>
+        <button type="submit" class="btn btn-primario btn-bloque" id="btn-recuperar"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg>Enviar enlace</button>
+        <button type="button" class="btn-texto" id="btn-volver-ingreso">Volver a ingresar</button>
+      </form>
+
+      <div class="demo-ayuda" id="demo-ayuda" hidden>
+        <b><svg class="i" aria-hidden="true"><use href="#i-info"/></svg>Cuentas de prueba</b>
+        <div class="demo-cuenta"><span><code>lider@clubhunk.co</code><small>Líder · contraseña Hunk2025!</small></span><button type="button" class="btn btn-borde btn-sm" data-demo="lider@clubhunk.co">Usar</button></div>
+        <div class="demo-cuenta"><span><code>miembro@clubhunk.co</code><small>Miembro oficial · contraseña Hunk2025!</small></span><button type="button" class="btn btn-borde btn-sm" data-demo="miembro@clubhunk.co">Usar</button></div>
+      </div>
+
+      <p class="pie-legal"><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg>Tus datos están protegidos por Habeas Data · Ley 1581 de 2012</p>
+    </div>
+  </main>
+</div>
+<script type="module" src="../assets/js/portal/ui-login.js"></script>
+</body>
+</html>

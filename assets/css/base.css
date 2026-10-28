@@ -1,0 +1,50 @@
+/* Club Hunk Cartagena · tokens y base compartidos (landing + portal) */
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&family=Inter:wght@400;500;600;700;800&display=swap");
+
+:root{
+  /* Marca */
+  --negro:#030203; --sup:#100C13; --sup2:#17121c; --borde:#2a2233;
+  --morado-prof:#29174E; --morado:#5634A7; --morado-br:#7B50DD;
+  --rojo:#A1231A; --rojo-br:#E33A3A;
+  --acero:#5D536C; --lavanda:#B2A2BB; --cromo:#EBE7EE;
+  /* Claros (para que no todo sea oscuro) */
+  --claro:#F7F5FA; --claro2:#EFEAF6; --claro-borde:#DDD5E8; --tinta:#1A1220; --tinta2:#4B4256;
+  /* Semánticos (por defecto: tema oscuro) */
+  --bg:var(--negro); --surface:var(--sup); --surface2:var(--sup2); --line:var(--borde);
+  --text:var(--cromo); --muted:var(--lavanda); --accent:var(--morado-br); --cta:var(--rojo-br);
+  --ok:#2FBF71; --warn:#F2B33D;
+  /* Tipografía */
+  --display:"Russo One","Arial Black",Impact,sans-serif;
+  --texto:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  /* Forma y movimiento */
+  --r-sm:10px; --r:16px; --r-lg:24px; --r-pill:999px;
+  --sombra:0 10px 30px -10px rgba(41,23,78,.45);
+  --sombra-claro:0 12px 32px -14px rgba(41,23,78,.25);
+  --ease:cubic-bezier(.2,.8,.2,1);
+  --cuadro:conic-gradient(var(--cromo) 25%,#050405 0 50%,var(--cromo) 0 75%,#050405 0);
+  --grad-marca:linear-gradient(135deg,var(--morado) 0%,var(--morado-br) 55%,var(--rojo-br) 100%);
+  --gutter:clamp(16px,4vw,40px); --max:1200px;
+}
+/* Sección clara: añade class="tema-claro" a cualquier <section> */
+.tema-claro{
+  --bg:var(--claro); --surface:#fff; --surface2:var(--claro2); --line:var(--claro-borde);
+  --text:var(--tinta); --muted:var(--tinta2); --accent:var(--morado);
+  background:var(--bg); color:var(--text);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--texto);line-height:1.6;overflow-x:hidden}
+img,video,svg{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--display);font-weight:400;line-height:1.1;margin:0 0 .5em;letter-spacing:.01em}
+.contenedor{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:.85em 1.5em;border-radius:var(--r-pill);
+  font:600 1rem/1 var(--texto);text-decoration:none;border:2px solid transparent;cursor:pointer;
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-cta{background:var(--cta);color:#fff;box-shadow:0 8px 24px -8px rgba(227,58,58,.6)}
+.btn-primario{background:var(--grad-marca);color:#fff;box-shadow:var(--sombra)}
+.btn-borde{border-color:currentColor;background:transparent;color:var(--text)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--morado-br);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}

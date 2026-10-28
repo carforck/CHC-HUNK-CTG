@@ -1,0 +1,252 @@
+{
+  "_esquema": {
+    "descripcion": "Feed de redes de Club Hunk Cartagena. Hoy es estático (editado a mano); en producción lo genera una función serverless en /api con este MISMO esquema y \"fuente\":\"api\".",
+    "fuente": "estatico | api",
+    "actualizado": "ISO 8601 con hora y zona (AAAA-MM-DDTHH:MM:SS-05:00) de la última sincronización.",
+    "perfiles": "tiktok {usuario, url, seguidores, meGusta} · instagram {usuario, url, seguidores?, publicaciones?}",
+    "publicaciones[]": "id (único, se usa para deduplicar) · origen: propio|etiqueta · autor {usuario, url} (obligatorio si origen=etiqueta) · red: tiktok|instagram · tipo: video|reel|foto · titulo · imagen (ruta relativa a la raíz o URL) · url · vistas (número, opcional) · fecha (AAAA-MM-DD o ISO) · anclado (bool, opcional) · ejemplo (bool, opcional: dato de muestra, reemplazar)",
+    "orden": "El cliente muestra primero las nuevas (tras un refresco), luego ancladas y luego por fecha descendente."
+  },
+  "fuente": "estatico",
+  "actualizado": "2026-10-24T08:00:00-05:00",
+  "perfiles": {
+    "tiktok": {
+      "usuario": "clubhunkcartagena",
+      "url": "https://www.tiktok.com/@clubhunkcartagena",
+      "seguidores": 1187,
+      "meGusta": 3060
+    },
+    "instagram": {
+      "usuario": "clubhunkcartagena",
+      "url": "https://www.instagram.com/clubhunkcartagena",
+      "seguidores": 166,
+      "publicaciones": 27
+    }
+  },
+  "publicaciones": [
+    {
+      "id": "tt-familia",
+      "origen": "propio",
+      "red": "tiktok",
+      "tipo": "video",
+      "titulo": "¿Quieres hacer parte de esta hermosa familia? ¡Escríbenos!",
+      "imagen": "recursos/fotos/integrantes.webp",
+      "url": "https://www.tiktok.com/@clubhunkcartagena",
+      "vistas": 12600,
+      "fecha": "2026-09-28",
+      "anclado": true
+    },
+    {
+      "id": "tt-rodada-nocturna",
+      "origen": "propio",
+      "red": "tiktok",
+      "tipo": "video",
+      "titulo": "Rodada nocturna del club",
+      "imagen": "recursos/fotos/rodada-nocturna.webp",
+      "url": "https://www.tiktok.com/@clubhunkcartagena",
+      "vistas": 10800,
+      "fecha": "2026-09-20",
+      "anclado": true
+    },
+    {
+      "id": "tt-hunk-calle",
+      "origen": "propio",
+      "red": "tiktok",
+      "tipo": "video",
+      "titulo": "Hunk en la calle, así se rueda en Cartagena",
+      "imagen": "recursos/fotos/miembro-casco.webp",
+      "url": "https://www.tiktok.com/@clubhunkcartagena",
+      "vistas": 4244,
+      "fecha": "2026-10-19",
+      "anclado": false
+    },
+    {
+      "id": "tt-mirador-marias",
+      "origen": "propio",
+      "red": "tiktok",
+      "tipo": "video",
+      "titulo": "Rodada para el mirador de las marías",
+      "imagen": "recursos/fotos/rodada-grupo.webp",
+      "url": "https://www.tiktok.com/@clubhunkcartagena",
+      "vistas": 2453,
+      "fecha": "2026-10-12",
+      "anclado": false
+    },
+    {
+      "id": "tt-parqueadero-estacion",
+      "origen": "propio",
+      "red": "tiktok",
+      "tipo": "video",
+      "titulo": "Parqueadero lleno de Hunks en la estación",
+      "imagen": "recursos/fotos/rodada-nocturna.webp",
+      "url": "https://www.tiktok.com/@clubhunkcartagena",
+      "vistas": 1974,
+      "fecha": "2026-10-05",
+      "anclado": false
+    },
+    {
+      "id": "tt-logo-halloween",
+      "origen": "propio",
+      "red": "tiktok",
+      "tipo": "video",
+      "titulo": "Nuestro logo, edición Halloween",
+      "imagen": "recursos/logo/club-hunk-logo-circular.webp",
+      "url": "https://www.tiktok.com/@clubhunkcartagena",
+      "vistas": 841,
+      "fecha": "2026-10-22",
+      "anclado": false
+    },
+    {
+      "id": "tt-tercera-entrega-jersey",
+      "origen": "propio",
+      "red": "tiktok",
+      "tipo": "video",
+      "titulo": "Tercera entrega de jersey oficiales del club hunk Cartagena",
+      "imagen": "recursos/fotos/integrantes.webp",
+      "url": "https://www.tiktok.com/@clubhunkcartagena",
+      "fecha": "2026-09-14",
+      "anclado": false
+    },
+    {
+      "id": "tt-entrega-jerseys",
+      "origen": "propio",
+      "red": "tiktok",
+      "tipo": "video",
+      "titulo": "Entrega de jerseys oficiales del club",
+      "imagen": "recursos/fotos/miembro-casco.webp",
+      "url": "https://www.tiktok.com/@clubhunkcartagena",
+      "fecha": "2026-08-30",
+      "anclado": false
+    },
+    {
+      "id": "tt-rodada-grupo",
+      "origen": "propio",
+      "red": "tiktok",
+      "tipo": "video",
+      "titulo": "Rodada en grupo por la ciudad",
+      "imagen": "recursos/fotos/rodada-grupo.webp",
+      "url": "https://www.tiktok.com/@clubhunkcartagena",
+      "fecha": "2026-08-24",
+      "anclado": false
+    },
+    {
+      "id": "tt-naturalfresh",
+      "origen": "propio",
+      "red": "tiktok",
+      "tipo": "video",
+      "titulo": "Todos pa' NaturalfreshCtg 🍓 alianza del club",
+      "imagen": "recursos/fotos/integrantes.webp",
+      "url": "https://www.tiktok.com/@clubhunkcartagena",
+      "fecha": "2026-08-17",
+      "anclado": false
+    },
+    {
+      "id": "tt-bandera-iglesia",
+      "origen": "propio",
+      "red": "tiktok",
+      "tipo": "foto",
+      "titulo": "Foto grupal con la bandera del club frente a la iglesia",
+      "imagen": "recursos/fotos/integrantes.webp",
+      "url": "https://www.tiktok.com/@clubhunkcartagena",
+      "fecha": "2026-08-10",
+      "anclado": false
+    },
+    {
+      "id": "ig-familia-chc",
+      "origen": "propio",
+      "red": "instagram",
+      "tipo": "foto",
+      "titulo": "Somos familia CHC ✌️🏍️ #cartacho #motos",
+      "imagen": "recursos/fotos/integrantes.webp",
+      "url": "https://www.instagram.com/clubhunkcartagena",
+      "fecha": "2026-10-02",
+      "anclado": false
+    },
+    {
+      "id": "ig-reel-rodada",
+      "origen": "propio",
+      "red": "instagram",
+      "tipo": "reel",
+      "titulo": "Rodada de domingo con la Comunidad CHC 🔥",
+      "imagen": "recursos/fotos/rodada-grupo.webp",
+      "url": "https://www.instagram.com/clubhunkcartagena",
+      "fecha": "2026-09-25",
+      "anclado": false
+    },
+    {
+      "id": "ig-casco",
+      "origen": "propio",
+      "red": "instagram",
+      "tipo": "foto",
+      "titulo": "Casco puesto y listos para rodar #racing",
+      "imagen": "recursos/fotos/miembro-casco.webp",
+      "url": "https://www.instagram.com/clubhunkcartagena",
+      "fecha": "2026-09-08",
+      "anclado": false
+    },
+    {
+      "id": "ig-tag-rider-ejemplo",
+      "origen": "etiqueta",
+      "autor": {
+        "usuario": "rider.ejemplo",
+        "url": "https://www.instagram.com/rider.ejemplo"
+      },
+      "red": "instagram",
+      "tipo": "foto",
+      "titulo": "Domingo de rodada con los parceros de @clubhunkcartagena 🏍️",
+      "imagen": "recursos/fotos/rodada-grupo.webp",
+      "url": "https://www.instagram.com/explore/tags/clubhunkcartagena/",
+      "fecha": "2026-10-20",
+      "anclado": false,
+      "ejemplo": true
+    },
+    {
+      "id": "tt-tag-hunk-ejemplo",
+      "origen": "etiqueta",
+      "autor": {
+        "usuario": "hunk.ejemplo.ctg",
+        "url": "https://www.tiktok.com/@hunk.ejemplo.ctg"
+      },
+      "red": "tiktok",
+      "tipo": "video",
+      "titulo": "Mi primera rodada con el Club Hunk Cartagena #ClubHunkCartagena",
+      "imagen": "recursos/fotos/rodada-nocturna.webp",
+      "url": "https://www.tiktok.com/tag/clubhunkcartagena",
+      "fecha": "2026-10-17",
+      "anclado": false,
+      "ejemplo": true
+    },
+    {
+      "id": "ig-tag-motera-ejemplo",
+      "origen": "etiqueta",
+      "autor": {
+        "usuario": "motera.ejemplo",
+        "url": "https://www.instagram.com/motera.ejemplo"
+      },
+      "red": "instagram",
+      "tipo": "reel",
+      "titulo": "Así se vive una noche con #ClubHunkCartagena ✨",
+      "imagen": "recursos/fotos/miembro-casco.webp",
+      "url": "https://www.instagram.com/explore/tags/clubhunkcartagena/",
+      "fecha": "2026-10-09",
+      "anclado": false,
+      "ejemplo": true
+    },
+    {
+      "id": "ig-tag-foto-ejemplo",
+      "origen": "etiqueta",
+      "autor": {
+        "usuario": "fotografo.ejemplo",
+        "url": "https://www.instagram.com/fotografo.ejemplo"
+      },
+      "red": "instagram",
+      "tipo": "foto",
+      "titulo": "Sesión de fotos para la familia CHC 📸 @clubhunkcartagena",
+      "imagen": "recursos/fotos/integrantes.webp",
+      "url": "https://www.instagram.com/explore/tags/clubhunkcartagena/",
+      "fecha": "2026-10-01",
+      "anclado": false,
+      "ejemplo": true
+    }
+  ]
+}

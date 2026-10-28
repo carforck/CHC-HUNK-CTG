@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Solicitud de ingreso · Club Hunk Cartagena</title>
+<meta name="description" content="Envía tu solicitud para unirte a Club Hunk Cartagena: datos personales, moto, salud y emergencia.">
+<meta name="theme-color" content="#030203">
+<link rel="icon" type="image/webp" href="../recursos/logo/club-hunk-logo-512.webp">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/portal.css">
+</head>
+<body class="portal pag-registro tema-claro">
+<a class="salto" href="#wizard">Saltar al formulario</a>
+
+<header class="reg-cab oscuro">
+  <div class="contenedor">
+    <div class="reg-cab-fila">
+      <a class="marca" href="../"><img src="../recursos/logo/club-hunk-logo-circular.webp" alt="" width="40" height="40"><span><b>Solicitud de ingreso</b><small>Club Hunk Cartagena</small></span></a>
+      <a class="volver" href="index.html"><svg class="i" aria-hidden="true"><use href="#i-login"/></svg><span>Ya tengo cuenta</span></a>
+    </div>
+    <nav class="progreso" aria-label="Progreso de la solicitud">
+      <ol class="progreso-pasos" id="progreso-pasos"></ol>
+      <div class="barra" role="progressbar" aria-label="Avance de la solicitud" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="barra"><span></span></div>
+      <div class="progreso-texto"><span id="progreso-paso">Paso 1 de 5</span><b id="progreso-pct">0%</b></div>
+    </nav>
+  </div>
+  <div class="franja" aria-hidden="true" style="height:5px;background-size:10px 10px"></div>
+</header>
+
+<main class="reg-main contenedor">
+  <div class="reg-grid">
+    <div>
+      <form id="wizard" class="wizard" novalidate aria-live="off">
+        <div class="wizard-cuerpo" id="wizard-cuerpo">
+          <div class="vacio" id="wizard-cargando"><span class="spinner" aria-hidden="true"></span><p>Cargando formulario…</p></div>
+        </div>
+        <div class="wizard-nav" id="wizard-nav" hidden>
+          <button type="button" class="btn btn-borde" data-atras hidden><svg class="i" aria-hidden="true"><use href="#i-left"/></svg>Atrás</button>
+          <span class="guardado" id="guardado" aria-live="polite"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Borrador guardado</span>
+          <button type="submit" class="btn btn-primario" data-siguiente>Siguiente<svg class="i" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </div>
+      </form>
+
+      <section class="wizard exito" id="exito" hidden aria-labelledby="exito-titulo" tabindex="-1">
+        <svg class="check-anim" viewBox="0 0 100 100" aria-hidden="true"><circle class="fondo" cx="50" cy="50" r="46"/><circle cx="50" cy="50" r="46"/><path d="M30 52 44 65 71 37"/></svg>
+        <h2 id="exito-titulo">Tu solicitud llegó a los líderes</h2>
+        <p id="exito-texto">Gracias por querer rodar con nosotros. Los líderes revisarán tu ficha y te avisaremos por WhatsApp o correo.</p>
+        <ol class="recorrido">
+          <li class="hecho"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span><b>Solicitud enviada</b><small>Tu ficha quedó registrada</small></span></li>
+          <li class="actual"><svg class="i" aria-hidden="true"><use href="#i-search"/></svg><span><b>Revisión de líderes</b><small>La ven en su panel</small></span></li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-route"/></svg><span><b>Aspirante</b><small>Empiezas a rodar con el club</small></span></li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-flag"/></svg><span><b>Miembro oficial</b><small>Recibes tu QR para el casco</small></span></li>
+        </ol>
+        <div class="exito-acciones">
+          <a class="btn btn-primario" href="panel.html"><svg class="i" aria-hidden="true"><use href="#i-home"/></svg>Ir a mi panel</a>
+          <a class="btn btn-borde" href="../">Volver al sitio</a>
+        </div>
+      </section>
+    </div>
+
+    <aside class="reg-lado" aria-label="Información de ayuda">
+      <div class="lado-tip" id="lado-tip">
+        <div class="franja" aria-hidden="true"></div>
+        <span class="eyebrow" style="color:#cdb9ff">Bueno saberlo</span>
+        <h3 id="tip-titulo">¿Por qué pedimos estos datos?</h3>
+        <p id="tip-texto">Para conocerte y poder contactarte. Nunca compartimos tu información fuera del club.</p>
+      </div>
+      <p class="lado-info"><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg><span>Tus datos están protegidos por Habeas Data (Ley 1581 de 2012). Los de salud solo los ven los líderes y tu ficha de emergencia.</span></p>
+      <p class="lado-info"><svg class="i" aria-hidden="true"><use href="#i-file"/></svg><span>Guardamos un borrador en este navegador mientras llenas la solicitud, para que no pierdas lo escrito si recargas la página.</span></p>
+    </aside>
+  </div>
+</main>
+<script type="module" src="../assets/js/portal/ui-registro.js"></script>
+</body>
+</html>
